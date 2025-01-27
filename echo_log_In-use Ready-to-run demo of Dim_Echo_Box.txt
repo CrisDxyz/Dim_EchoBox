@@ -1,0 +1,103 @@
+--Demo Starting!
+
+--------------------------------------------------
++-----10:23:58.2358 a. m.-----+
+Null Variable
+Now monitoring: result = Integer: 15
+
+--------------------------------------------------
+
+Monitoring Hotkey States: Press F1 key to see the toggle state updating!
+Now monitoring: toggle = Integer: 0
+
+--------------------------------------------------
+Lasting Echo: result changed to:
+Integer: 50
+
+Simulating User Input Tracking: Press a or b keys!
+Now monitoring: typedKeys = 
++----------------------------+
++-----10:24:03.243 a. m.-----+
+Null Variable
+
+--------------------------------------------------
+Now monitoring: test_file_read = 
++----------------------------+
++-----10:24:08.248 a. m.-----+
+String: Initial content
+
+Updating file:
+--------------------------------------------------
+Lasting Echo: test_file_read changed to:
+String: Initial content
+Updated content
+
+Now monitoring: randomValue = 
++----------------------------+
++-----10:24:11.2411 a. m.-----+
+Integer: 12
+
+--------------------------------------------------
+Lasting Echo: randomValue changed to:
+Integer: 9
+Now monitoring: counter = 
++----------------------------+
++-----10:24:13.2413 a. m.-----+
+Integer: 0
+
+--------------------------------------------------
+Now monitoring: status = 
++----------------------------+
++-----10:24:14.2414 a. m.-----+
+String: Inactive
+
+--------------------------------------------------
+Lasting Echo: status changed to:
+String: Active
+Lasting Echo: counter changed to:
+Integer: 1
+Lasting Echo: counter changed to:
+Integer: 2
+Lasting Echo: typedKeys changed to:
+String: a
+Lasting Echo: typedKeys changed to:
+String: ab
+Lasting Echo: typedKeys changed to:
+String: aba
+Lasting Echo: typedKeys changed to:
+String: abab
+Lasting Echo: typedKeys changed to:
+String: ababa
+Lasting Echo: typedKeys changed to:
+String: ababab
+Lasting Echo: typedKeys changed to:
+String: abababa
+Lasting Echo: counter changed to:
+Integer: 3
+Lasting Echo: toggle changed to:
+Integer: 1
+Lasting Echo: toggle changed to:
+Integer: 0
+Lasting Echo: toggle changed to:
+Integer: 1
+Lasting Echo: toggle changed to:
+Integer: 0
+Lasting Echo: toggle changed to:
+Integer: 1
+Lasting Echo: toggle changed to:
+Integer: 0
+Lasting Echo: typedKeys changed to:
+String: abababaa
+Lasting Echo: typedKeys changed to:
+String: abababaab
+Lasting Echo: typedKeys changed to:
+String: abababaabb
+Lasting Echo: typedKeys changed to:
+String: abababaabba
+Lasting Echo: typedKeys changed to:
+String: abababaabbab
+Lasting Echo: typedKeys changed to:
+String: abababaabbaba
+Lasting Echo: counter changed to:
+Integer: 4
+

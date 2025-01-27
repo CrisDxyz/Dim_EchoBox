@@ -1,0 +1,384 @@
+--Demo Starting!
+
++-----04:23:10.2310 a. m.-----+
+Integer: 1
+Integer: 2
+Integer: 3
+Integer: 4
+String: Variadic Function Call
+Integer: 1
+Array: [ [Address: 0xA19F00]
+  [1] String: Item1
+  [2] String: Item2
+  [3] Integer: 42
+  [4]   Array: [ [Address: 0xA1A240]
+    [1] String: Nested1
+    [2] String: Nested2
+  ]
+]
+String: 1
+String: Simple string debugging
+--------------------------------------------------
+Now monitoring: word = String: hello
+
+Lasting Echo: word changed to:
+String: hi
+--------------------------------------------------
+Now monitoring: arr = Array: [ [Address: 0xA1A200]
+  [1] Integer: 1
+  [2] Integer: 2
+  [3] Integer: 3
+]
+
+Lasting Echo: word changed to:
+String: hey
+--------------------------------------------------
+Map: { [Address: 0xA198C0]
+  [Green] => String: 00ff00
+  [Red] => String: ff0000
+}
+Now monitoring: clrs = Map: { [Address: 0xA198C0]
+  [Green] => String: 00ff00
+  [Red] => Lasting Echo: arr changed to:
+Array: [ [Address: 0xA1A200]
+  [1] Integer: 1
+  [2] Integer: 2
+  [3] Integer: 3
+  [4] Integer: 4
+]
+String: ff0000
+}
+
+--------------------------------------------------
+Now monitoring: ObjBox = Object: { [Address: 0xA13C70]
+  .height => Integer: 12
+  .length => Integer: 70
+  .width => Integer: 57
+}
+Lasting Echo: clrs changed to:
+Map: { [Address: 0xA198C0]
+  [Blue] => String: 0000ff
+  [Green] => String: 00ff00
+  [Red] => String: ff0000
+}
+
+Now monitoring: nestedBox = Object: { [Address: 0xA13CD0]
+  .color => String: blue
+  .dimensions => 
+    Object: { [Address: 0xA13C70]
+      .height => Integer: 12
+      .length => Integer: 70
+      .width => Integer: 57
+    }
+  .tags => 
+    Array: [ [Address: 0xA19F40]
+      [1] String: large
+      [2] String: heavy
+    ]
+}
+
+Lasting Echo: ObjBox changed to:
+Object: { [Address: 0xA13C70]
+  .height => Integer: 12
+  .length => Integer: 70
+  .width => Integer: 60
+}
+Lasting Echo: nestedBox changed to:
+Object: { [Address: 0xA13CD0]
+  .color => String: red
+  .dimensions => 
+    Object: { [Address: 0xA13C70]
+      .height => Integer: 12
+      .length => Integer: 70
+      .width => Integer: 60
+    }
+  .tags => 
+    Array: [ [Address: 0xA19F40]
+      [1] String: large
+      [2] String: heavy
+    ]
+}
+--------------------------------------------------
+Now monitoring: myVar = String: Hello
+
+Lasting Echo: myVar changed to:
+String: Hi
+Lasting Echo: myVar changed to:
+String: Hola
+Lasting Echo: myVar changed to:
+String: H
+Lasting Echo: myVar changed to:
+String: o
+Lasting Echo: myVar changed to:
+String: l
+Lasting Echo: myVar changed to:
+String: a
+--------------------------------------------------
+Now monitoring: testMap = 
++----------------------------+
++-----04:23:13.2313 a. m.-----+
+Map: { [Address: 0xA1A640]
+  [key1] => String: value1
+  [key2] => 
+    Array: [ [Address: 0xA19AC0]
+      [1] Integer: 1
+      [2] Integer: 2
+      [3] Integer: 3
+    ]
+}
+
+Now monitoring: testArray = Array: [ [Address: 0xA1A400]
+  [1] Integer: 1
+  [2] String: two
+  [3]   Map: { [Address: 0xA1A380]
+    [three] => Integer: 3
+  }
+]
+
+Now monitoring: testObj = Object: { [Address: 0xA145A0]
+  .prop1 => String: value1
+  .prop2 => 
+    Array: [ [Address: 0xA19C40]
+      [1] Integer: 4
+      [2] Integer: 5
+      [3] Integer: 6
+    ]
+}
+
+Lasting Echo: testArray changed to:
+Array: [ [Address: 0xA1A400]
+  [1] Integer: 1
+  [2] String: 2
+  [3]   Map: { [Address: 0xA1A380]
+    [three] => Integer: 3
+  }
+]
+Lasting Echo: testMap changed to:
+Map: { [Address: 0xA1A640]
+  [key1] => String: value1
+  [key2] => 
+    Array: [ [Address: 0xA19AC0]
+      [1] Integer: 1
+      [2] Integer: 2
+      [3] Integer: 3
+      [4] Integer: 4
+    ]
+}
+Lasting Echo: testObj changed to:
+Object: { [Address: 0xA145A0]
+  .prop1 => String: value1
+  .prop2 => 
+    Array: [ [Address: 0xA19C40]
+      [1] Integer: 4
+      [2] Integer: 5
+      [3] Integer: 6
+      [4] Integer: 7
+    ]
+}
+--------------------------------------------------
+Now monitoring: counter = Integer: 0
+
+Lasting Echo: counter changed to:
+Integer: 1
+Lasting Echo: counter changed to:
+Integer: 2
+Lasting Echo: counter changed to:
+Integer: 3
+Lasting Echo: counter changed to:
+Integer: 4
+Lasting Echo: counter changed to:
+Integer: 5
+Lasting Echo: counter changed to:
+Integer: 6
+Lasting Echo: counter changed to:
+Integer: 7
+Lasting Echo: counter changed to:
+Integer: 8
+Lasting Echo: counter changed to:
+Integer: 9
+Lasting Echo: counter changed to:
+Integer: 10
+Lasting Echo: counter changed to:
+Integer: 11
+Lasting Echo: counter changed to:
+Integer: 12
+Lasting Echo: counter changed to:
+Integer: 13
+Lasting Echo: counter changed to:
+Integer: 14
+Lasting Echo: counter changed to:
+Integer: 15
+Lasting Echo: counter changed to:
+Integer: 16
+Lasting Echo: counter changed to:
+Integer: 17
+Lasting Echo: counter changed to:
+Integer: 18
+Lasting Echo: counter changed to:
+Integer: 19
+Lasting Echo: counter changed to:
+Integer: 20
+Lasting Echo: counter changed to:
+Integer: 21
+Lasting Echo: counter changed to:
+Integer: 22
+Lasting Echo: counter changed to:
+Integer: 23
+Lasting Echo: counter changed to:
+Integer: 24
+Lasting Echo: counter changed to:
+Integer: 25
+Lasting Echo: counter changed to:
+Integer: 26
+Lasting Echo: counter changed to:
+Integer: 27
+Lasting Echo: counter changed to:
+Integer: 28
+Lasting Echo: counter changed to:
+Integer: 29
+Lasting Echo: counter changed to:
+Integer: 30
+Lasting Echo: counter changed to:
+Integer: 31
+Lasting Echo: counter changed to:
+Integer: 32
+Lasting Echo: counter changed to:
+Integer: 33
+Lasting Echo: counter changed to:
+Integer: 34
+Lasting Echo: counter changed to:
+Integer: 35
+Lasting Echo: counter changed to:
+Integer: 36
+Lasting Echo: counter changed to:
+Integer: 37
+Lasting Echo: counter changed to:
+Integer: 38
+Lasting Echo: counter changed to:
+Integer: 39
+Lasting Echo: counter changed to:
+Integer: 40
+Lasting Echo: counter changed to:
+Integer: 41
+Lasting Echo: counter changed to:
+Integer: 42
+Lasting Echo: counter changed to:
+Integer: 43
+Lasting Echo: counter changed to:
+Integer: 44
+Lasting Echo: counter changed to:
+Integer: 45
+Lasting Echo: counter changed to:
+Integer: 46
+Lasting Echo: counter changed to:
+Integer: 47
+Lasting Echo: counter changed to:
+Integer: 48
+Lasting Echo: counter changed to:
+Integer: 49
+Lasting Echo: counter changed to:
+Integer: 50
+Lasting Echo: counter changed to:
+Integer: 51
+Lasting Echo: counter changed to:
+Integer: 52
+Lasting Echo: counter changed to:
+Integer: 53
+Lasting Echo: counter changed to:
+Integer: 54
+Lasting Echo: counter changed to:
+Integer: 55
+Lasting Echo: counter changed to:
+Integer: 56
+Lasting Echo: counter changed to:
+Integer: 57
+Lasting Echo: counter changed to:
+Integer: 58
+Lasting Echo: counter changed to:
+Integer: 59
+Lasting Echo: counter changed to:
+Integer: 60
+Lasting Echo: counter changed to:
+Integer: 61
+Lasting Echo: counter changed to:
+Integer: 62
+Lasting Echo: counter changed to:
+Integer: 63
+Lasting Echo: counter changed to:
+Integer: 64
+Lasting Echo: counter changed to:
+Integer: 65
+Lasting Echo: counter changed to:
+Integer: 66
+Lasting Echo: counter changed to:
+Integer: 67
+Lasting Echo: counter changed to:
+Integer: 68
+Lasting Echo: counter changed to:
+Integer: 69
+Lasting Echo: counter changed to:
+Integer: 70
+Lasting Echo: counter changed to:
+Integer: 71
+Lasting Echo: counter changed to:
+Integer: 72
+Lasting Echo: counter changed to:
+Integer: 73
+Lasting Echo: counter changed to:
+Integer: 74
+Lasting Echo: counter changed to:
+Integer: 75
+Lasting Echo: counter changed to:
+Integer: 76
+Lasting Echo: counter changed to:
+Integer: 77
+Lasting Echo: counter changed to:
+Integer: 78
+Lasting Echo: counter changed to:
+Integer: 79
+Lasting Echo: counter changed to:
+Integer: 80
+Lasting Echo: counter changed to:
+Integer: 81
+Lasting Echo: counter changed to:
+Integer: 82
+Lasting Echo: counter changed to:
+Integer: 83
+Lasting Echo: counter changed to:
+Integer: 84
+Lasting Echo: counter changed to:
+Integer: 85
+Lasting Echo: counter changed to:
+Integer: 86
+Lasting Echo: counter changed to:
+Integer: 87
+Lasting Echo: counter changed to:
+Integer: 88
+Lasting Echo: counter changed to:
+Integer: 89
+Lasting Echo: counter changed to:
+Integer: 90
+Lasting Echo: counter changed to:
+Integer: 91
+Lasting Echo: counter changed to:
+Integer: 92
+Lasting Echo: counter changed to:
+Integer: 93
+Lasting Echo: counter changed to:
+Integer: 94
+Lasting Echo: counter changed to:
+Integer: 95
+Lasting Echo: counter changed to:
+Integer: 96
+Lasting Echo: counter changed to:
+Integer: 97
+Lasting Echo: counter changed to:
+Integer: 98
+Lasting Echo: counter changed to:
+Integer: 99
+Lasting Echo: counter changed to:
+Integer: 100
+--------------------------------------------------
+
+
+Demo Ending!--
